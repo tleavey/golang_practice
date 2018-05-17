@@ -1,0 +1,19 @@
+1. In order to print the data sorted by product, you likely had to load all the data in memory. Imagine the csv file is over 1GB in size. What is the problem?
+
+Answer: I think the main problem would be accessing the information in a timely manner if there is that large of an amount of data. Meaning that the time to search through my multi-dimensional array AND order it would take a really long time. It's definitely inefficient.
+
+2. What was the problem with counting the number of Amandas?
+
+Answer: The problem was some of the Amandas had different capitalization, uppercase, lowercase, mixed, and there was also an Amanda and Fred together, and because of this, the program recognized them all as different values. So my program had to make them all one case, and then search the entire value and check if it contained 'amanda'. This could cause serious errors if people record something in excel but change the capitalization, throwing off the whole program.
+
+3. What was the problem calculating the average transaction amount? Although the data appears numeric, what did your program have to do to perform the necessary computation?
+
+Answer: I had three issues with the average transaction amount. The first issue was that it contained an element I didn't need, the 'Price' element. So I had to make sure to get rid of that before I dealt with the numbers. The second issue was I had some empty strings in the array, meaning there was no price set for those transactions. I needed to make sure those weren't being parsed when I did the int conversion. The numbers were actually of type string, so I had to convert them to ints before I could do any kind of math calculations on them.
+
+4. Changing "United States" to "USA" is one change. But how many records in the data had to change?
+
+Answer: 26 records had to change.
+
+5. With the second CSV file, re-running your program caused some problems. What broke, and why? Why does your program have to change in order to work properly?
+
+Answer: Because the columns are in a different order in the second CSV file compared to the first, my program would search in the wrong columns for the information it needed. Specifically, the count for Amandas and the changing the country to USA broke because the columns were in a different order (Name and Country). After the Amanda break, I coded my program to work for both files.
