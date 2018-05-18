@@ -7,7 +7,7 @@
 // ./hw1.go filename
 
 // Design note: I inserted all the rows (as array type) into one large array.
-// So I work with and manipulate an array of (an array of strings).
+// So I work with and manipulate an array of an array of strings.
 // This program works for either file as input.
 
 // Side note: This is my first Go program ever aside from 'Hello World'. Yay!
