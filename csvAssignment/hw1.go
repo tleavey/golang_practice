@@ -122,7 +122,7 @@ func countAmandas(allRowsOfData [][]string) int {
 }
 
 func replaceUnitedStatesWithUSA(unsortedData [][]string) [][]string {
-	if unsortedData[0][6] == "Country" {
+    if unsortedData[0][6] == "Country" {
     	// The for loop replaces each "United States" with "USA"
     	for key := range unsortedData {
     		if unsortedData[key][6] == "United States" {
